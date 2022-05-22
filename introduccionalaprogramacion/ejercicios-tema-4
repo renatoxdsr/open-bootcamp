@@ -1,3 +1,4 @@
+//CONDICION IF/ELSE
 class Main {  
   public static void main(String args[]) { 
     
@@ -14,6 +15,7 @@ class Main {
   } 
 }
 
+//WHILE
 class Main {  
   public static void main(String args[]) { 
     
@@ -27,6 +29,7 @@ class Main {
   } 
 }
 
+// DO-WHILE
 class Main {  
   public static void main(String args[]) { 
     
@@ -41,6 +44,7 @@ class Main {
   } 
 }
 
+//FOR
 class Main {  
   public static void main(String args[]) { 
 
@@ -48,5 +52,32 @@ class Main {
       System.out.println(numeroFor);
     }
 
+  } 
+}
+
+//SWITCH
+class Main {  
+  public static void main(String args[]) { 
+
+    var estacion = "renato";
+
+    switch(estacion){
+      case "primavera":
+        System.out.println("Estamos en primavera");
+        break;
+      case "otoño":
+        System.out.println("Estamos en otoño");
+        break;
+      case "verano":
+        System.out.println("Estamos en verano");
+        break;
+      case "invierno":
+        System.out.println("Estamos en invierno");
+        break;
+      default:  
+        System.out.println("Sorry! Eso no es una estacion");
+        break;
+        
+    }
   } 
 }
