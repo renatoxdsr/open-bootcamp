@@ -33,11 +33,12 @@ class Main {
 class Main {  
   public static void main(String args[]) { 
     
-    int numeroWhile = -3;
+    int numeroWhile = 1;
 
     do {
-      System.out.println(numeroWhile);
       numeroWhile++;
+      System.out.println(numeroWhile);
+      
     }
     while(numeroWhile <= 1);
 
