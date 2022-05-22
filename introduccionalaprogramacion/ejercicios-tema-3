@@ -9,11 +9,15 @@ class Main {
     int parametro3 = 46;
     
     var valor = suma(parametro1, parametro2, parametro3);
-
-    System.out.println("Cuantas puertas tiene el coche:");
-    System.out.println(miCoche.elCoche);
+    
+    //Primera parte:
     System.out.println("Ese es el valor de la suma:");
     System.out.println(valor);
+    System.lineSeparator();
+    
+    //Segunda parte:
+    System.out.println("Cuantas puertas tiene el coche:");
+    System.out.println(miCoche.elCoche);
   } 
   public static int suma(int a, int b, int c) {
     int resultado;
