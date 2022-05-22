@@ -1,0 +1,31 @@
+class Main {  
+  public static void main(String args[]) { 
+    
+    Coche miCoche = new Coche();
+    miCoche.numeroDePuertas();
+
+    int parametro1 = 20;
+    int parametro2 = 29;
+    int parametro3 = 46;
+    
+    var valor = suma(parametro1, parametro2, parametro3);
+
+    System.out.println("Cuantas puertas tiene el coche:");
+    System.out.println(miCoche.elCoche);
+    System.out.println("Ese es el valor de la suma:");
+    System.out.println(valor);
+  } 
+  public static int suma(int a, int b, int c) {
+    int resultado;
+    resultado =  a + b + c;
+
+    return resultado;
+  }
+}
+class Coche {
+  public int elCoche = 2;
+
+  public void numeroDePuertas() {
+    this.elCoche = elCoche;
+  }
+}
