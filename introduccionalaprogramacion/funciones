@@ -25,3 +25,50 @@ class Main {
       
   } 
 }
+//FOR 
+class Main {  
+  public static void main(String args[]) { 
+    
+    for(int contador = 0; contador <= 10; contador = contador +1){
+      System.out.println(contador);
+      
+    }
+      
+  } 
+}
+
+class Main {  
+  public static void main(String args[]) { 
+    
+    int valores[] = {10, 20, 30, 40, 50};
+
+    for(int valor = 0; valor < valores.length; valor++){
+      System.out.println(valores[valor]);
+    }
+
+  } 
+}
+//SWITCH
+
+class Main {  
+  public static void main(String args[]) { 
+    
+    var hoy_es = "SABADO";
+
+    switch(hoy_es){
+      case "LUNES":
+      case "MARTES":
+      case "MiERCOLES":
+      case "JUEVES":
+      case "VIERNES":
+        System.out.println("Hoy es laborable");
+        break;
+      case "SABADO":
+      case "DOMINGO":
+        System.out.println("Hoy no laboro");
+        break;
+      default:
+    }
+
+  } 
+}
