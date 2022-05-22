@@ -1,0 +1,43 @@
+class Main {  
+  public static void main(String args[]) { 
+    
+    var numeroif = -3;
+
+    if(numeroif > 0){
+      System.out.println("Es un numero Positivo");
+    }else if(numeroif == 0){
+      System.out.println("Es Zero 0");
+    }else{
+      System.out.println("Es un numero Negativo");
+    }
+
+  } 
+}
+
+class Main {  
+  public static void main(String args[]) { 
+    
+    int numeroWhile = -3;
+
+    while(numeroWhile <= 1){
+      System.out.println("Numero va a  positivo: " + numeroWhile);
+      numeroWhile++; // numeroWhile--;
+    }
+
+  } 
+}
+
+class Main {  
+  public static void main(String args[]) { 
+    
+    int numeroWhile = -3;
+
+    do {
+      System.out.println(numeroWhile);
+      numeroWhile++;
+    }
+    while(numeroWhile <= 1);
+
+  } 
+}
+
