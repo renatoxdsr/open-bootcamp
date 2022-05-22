@@ -1,0 +1,27 @@
+//WHILE
+class Main {  
+  public static void main(String args[]) { 
+    int contador = 10;
+
+    while (contador >= 0) {
+      System.out.println("Contador vale:" + contador);
+      contador = contador - 5; // contador--;
+    }
+  } 
+}
+
+----------------------
+//DO WHILE
+
+class Main {  
+  public static void main(String args[]) { 
+    int contador = 12;
+
+    do{
+      System.out.println(contador);
+      contador = contador - 2; // contador--;
+    }
+    while (contador >= 0); 
+      
+  } 
+}
