@@ -3,6 +3,7 @@ class Main {
     
     Coche miCoche = new Coche();
     miCoche.numeroDePuertas();
+    miCoche.numeroDePuertas();
 
     int parametro1 = 20;
     int parametro2 = 29;
@@ -30,6 +31,6 @@ class Coche {
   public int elCoche = 2;
 
   public void numeroDePuertas() {
-    this.elCoche = elCoche;
+    this.elCoche++;
   }
 }
