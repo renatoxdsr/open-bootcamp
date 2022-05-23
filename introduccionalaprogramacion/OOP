@@ -1,0 +1,80 @@
+class Main {  
+  public static void main(String args[]) { 
+    Coche coche = new Coche();
+    System.out.println(coche.numeroDePuertas);
+    System.out.println(coche.velocidadMaxima);
+ 
+    System.out.println(coche.velocidadAtual);
+    coche.acelerar();
+    System.out.println(coche.velocidadAtual);
+    coche.frenar();
+    System.out.println(coche.velocidadAtual);
+
+    Coche coche2 = new Coche();
+    System.out.println(coche2.velocidadAtual);
+  } 
+    
+}
+
+class Coche {
+  int numeroDePuertas;
+  int velocidadMaxima;
+  float velocidadAtual;
+
+  public Coche(){
+    numeroDePuertas = 5;
+    velocidadMaxima = 120;
+    System.out.println("Estoy en el constructor");
+  }
+  public void acelerar(){
+    velocidadAtual += 15;    
+  }
+  public void frenar(){
+    velocidadAtual -= 7;
+  }
+}
+
+-----------
+class Main {  
+  public static void main(String args[]) { 
+    Coche coche = new Coche();
+    System.out.println(coche.numeroDePuertas);
+    System.out.println(coche.velocidadMaxima);
+
+    Coche coche2 = new Coche(2, 90);
+    System.out.println(coche2.numeroDePuertas);
+    System.out.println(coche2.velocidadMaxima);
+  } 
+    
+}
+
+class Coche {
+  int numeroDePuertas;
+  int velocidadMaxima;
+  float velocidadAtual;
+
+  public Coche(){
+    numeroDePuertas = 5;
+    velocidadMaxima = 120;
+    System.out.println("Estoy en el constructor ---sin nada---");
+  }
+  public Coche(int numeroDePuertas, int velocidadMaxima){
+    this.numeroDePuertas = numeroDePuertas;
+    this.velocidadMaxima = velocidadMaxima;
+    System.out.println("Estoy en el constructor COM PARAMETROS");
+  }
+
+  public void acelerar(){
+    velocidadAtual += 15;    
+  }
+  public void frenar(){
+    velocidadAtual -= 7;
+  }
+/*   public int Suma(int a, int b){
+    return a + b;
+  } */
+/*   public float Suma(int a, int b){
+    return a + b;
+  } */
+}
+--------------------------
