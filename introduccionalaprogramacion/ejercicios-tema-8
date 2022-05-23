@@ -1,16 +1,41 @@
 class Main {  
   public static void main(String args[]) { 
     Persona persona = new Persona();
-    
-    //gets y sets 
-    // Usar System.out.println
+    persona.setNome("Renato Xavier");
+    persona.setEdad(25);
+    persona.setTelefono(9855556663L);
+
+    System.out.print("El nombre es: " + persona.getNome()+ "\n");
+    System.out.print("La edad es: " + persona.getEdad()+ "\n");
+    System.out.print("El telefono: " + persona.getTelefono() + "\n");
   } 
     
 }
 
 class Persona{
-  private Int edad;
+  private int edad;
   private String nome;
-  private Int telefono;
+  private long telefono;
+
+  public void setEdad(int edad){
+    this.edad = edad;
+  }
+  public int getEdad(){
+    return this.edad;
+  }
+
+  public void setNome(String nome){
+    this.nome = nome;
+  }
+  public String getNome(){
+    return this.nome;
+  }
+
+  public void setTelefono(long telefono){
+    this.telefono = telefono;
+  }
+  public long getTelefono(){
+    return this.telefono;
+  }  
 
 }
