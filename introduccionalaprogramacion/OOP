@@ -78,3 +78,28 @@ class Coche {
   } */
 }
 --------------------------
+class Main {  
+  public static void main(String args[]) { 
+    Vehiculo coche = new Vehiculo();
+    coche.setTipo("Coche");
+    /* vehiculo.tipo = "Coche"; */
+    
+    Vehiculo moto = new Vehiculo();
+    moto.setTipo("Brozz");
+      
+    System.out.println(coche.getTipo());
+    System.out.println(moto.getTipo());
+  } 
+}
+
+class Vehiculo{
+  private String tipo;
+
+  public void setTipo(String tipo){
+    this.tipo = tipo;
+  }
+
+  public String getTipo() {
+    return this.tipo;
+  }
+}
