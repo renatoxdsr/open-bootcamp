@@ -1,0 +1,16 @@
+class Main {  
+  public static void main(String args[]) { 
+    Persona persona = new Persona();
+    
+    //gets y sets 
+    // Usar System.out.println
+  } 
+    
+}
+
+class Persona{
+  private Int edad;
+  private String nome;
+  private Int telefono;
+
+}
