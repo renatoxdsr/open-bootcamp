@@ -132,3 +132,34 @@ abstract class Vehiculo{
   } */
   
 }
+
+//Inheritance
+
+class Main {  
+  public static void main(String args[]) { 
+    CocheEletrico cocheEletrico = new CocheEletrico();
+    cocheEletrico.velocidadMaxima = 14;
+    cocheEletrico.matricula = "ABC 1234 ES";
+    System.out.println(cocheEletrico.compruebaMatricula("XAXX"));
+  } 
+}
+
+class Vehiculo{
+  int velocidadMaxima;
+  String matricula;
+
+  public boolean compruebaMatricula(String matricula) {
+    if(matricula == "XXX"){
+      return true;
+    }
+    return false;
+  }
+}
+
+class Coche extends Vehiculo {
+  
+}
+
+class CocheEletrico extends Coche {
+  
+}
