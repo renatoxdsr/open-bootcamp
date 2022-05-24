@@ -1,0 +1,107 @@
+class Main {  
+  public static void main(String args[]) { 
+    //create a Instance
+    Cliente cliente = new Cliente();
+
+    cliente.setNome("Angelo");
+    System.out.print("El nombre del cliente es: "+ cliente.getNome()+ "\n");
+
+    long tel = 34444525698L;
+    cliente.setTelefono(tel);
+    System.out.print("El telefono del cliente es: "+ cliente.getTelefono()+ "\n");
+    
+    cliente.setCredito(9600);
+    System.out.print("El credito del cliente es: "+ cliente.getCredito()+ "\n" + "\n");
+
+    Trabajador trabajador = new Trabajador();
+    trabajador.setNome("Jose");
+    System.out.print("El nombre del trabajador es: "+ trabajador.getNome()+ "\n");
+
+    trabajador.setSalario(4500);
+    System.out.print("El salario del trabajador es: "+ trabajador.getSalario()+ "\n");
+  } 
+    
+}
+
+abstract class Persona{
+  int edad;
+  String nome;
+  long telefono;
+
+  abstract public void setEdad(int edad);
+  abstract public int getEdad();
+
+  abstract public void setNome(String nome);
+  abstract public String getNome();
+
+  abstract public void setTelefono(long telefono);
+  abstract public long getTelefono();
+
+
+}
+
+class Cliente extends Persona{
+  int credito;
+  
+  public void setEdad(int edad){
+    this.edad = edad;
+  }
+  public int getEdad(){
+    return this.edad;
+  }
+
+  public void setNome(String nome){
+    this.nome = nome;
+  }
+  public String getNome(){
+    return this.nome;
+  }
+
+  public void setTelefono(long telefono){
+    this.telefono = telefono;
+  }
+  public long getTelefono(){
+    return this.telefono;
+  }  
+
+  public void setCredito(int credito){
+    this.credito = credito;
+  }
+  public int getCredito(){
+    return this.credito;
+  }  
+  
+}
+
+class Trabajador extends Persona{
+  int salario;
+
+  public void setEdad(int edad){
+    this.edad = edad;
+  }
+  public int getEdad(){
+    return this.edad;
+  }
+
+  public void setNome(String nome){
+    this.nome = nome;
+  }
+  public String getNome(){
+    return this.nome;
+  }
+
+  public void setTelefono(long telefono){
+    this.telefono = telefono;
+  }
+  public long getTelefono(){
+    return this.telefono;
+  }  
+
+  public void setSalario(int salario){
+    this.salario = salario;
+  }
+  public int getSalario(){
+    return this.salario;
+  } 
+  
+}
