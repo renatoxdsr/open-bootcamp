@@ -163,3 +163,108 @@ class Coche extends Vehiculo {
 class CocheEletrico extends Coche {
   
 }
+
+//herança unica 
+
+class Main {  
+  public static void main(String args[]) { 
+    //create a Instance
+    Coche coche = new Coche();
+    coche.setSonido("brrrr");
+    System.out.println(coche.getSonido());
+
+  } 
+}
+
+abstract class Vehiculo{
+  int velocidadMaxima;
+  String matricula;
+  String sonido;
+
+  //create a constructor
+  public Vehiculo(){
+    System.out.println("Estoy en el constructor de Vehiculo!");
+  }
+
+  abstract public String getSonido();
+  abstract public void setSonido(String sonido);
+}
+
+class Coche extends Vehiculo {
+  
+  public String getSonido(){
+    return "Soy un supersonido:" + this.sonido;
+     
+  }
+  public void setSonido(String sonido){
+    this.sonido = sonido;
+  }
+  
+}
+
+class Moto extends Vehiculo {
+  public String getSonido(){
+    return "Soy un sonidillo de moto:" + this.sonido;
+  }
+  
+  public void setSonido(String sonido){
+    this.sonido = sonido;
+  }
+  
+}
+/* class CocheEletrico extends Coche {
+  
+} */
+
+
+//Polimorfismo
+class Main {  
+  public static void main(String args[]) { 
+    //create a Instance
+    Coche coche = new Coche();
+    coche.diHola();
+
+  } 
+}
+
+abstract class Vehiculo{
+  public void diHola(){
+    System.out.println("Hola!");
+  }
+}
+
+class Coche extends Vehiculo {
+  public void diHola() {
+    System.out.println("Soy lena Coche!");
+  }
+}
+/* class CocheEletrico extends Coche {
+  
+} */
+
+//Interface
+class Main {  
+  public static void main(String args[]) { 
+    //create a Instance
+    Coche coche = new Coche();
+    coche.diHola();
+
+  } 
+}
+
+interface Vehiculo{
+  int acelerar = 0;
+  
+  void Acelerar(int cuantaVelocidad);
+  void Frenar(int cuantaVelocidad);
+}
+class Coche implements Vehiculo {
+  public void Acelerar(int cuantaVelocidad){
+    
+  }
+
+  public void Frenar(int cuantaVelocidad){
+    
+  }
+  
+}
