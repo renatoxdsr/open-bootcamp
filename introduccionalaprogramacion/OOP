@@ -268,3 +268,54 @@ class Coche implements Vehiculo {
   }
   
 }
+
+//Metodos de clase
+
+class Main {  
+  public static void main(String args[]) { 
+    //create a Instance - coche es una instancia de la clase coche
+    Coche coche = new Coche();
+    Moto moto = new Moto();
+
+    //implementando de la interface
+    EjecutarAcelerar(moto);
+    //passar el parametro que tiene la implementacion
+    EjecutarAcelerar(coche);
+
+  } 
+
+  //create a new function
+  public static void EjecutarAcelerar(Vehiculo vehiculo) {
+    vehiculo.Acelerar(20);
+  }
+}
+
+interface Vehiculo{
+  int acelerar = 0;
+  
+  void Acelerar(int cuantaVelocidad);
+  void Frenar(int cuantaVelocidad);
+}
+class Coche implements Vehiculo {
+  public void Acelerar(int cuantaVelocidad){
+    System.out.println("Coche() -> Acelerar()");
+    
+  }
+
+  public void Frenar(int cuantaVelocidad){
+    System.out.println("Coche() -> Frenar()");
+  }
+  
+}
+
+class Moto implements Vehiculo {
+  public void Acelerar(int cuantaVelocidad){
+    System.out.println("Moto() -> Acelerar()");
+    
+  }
+
+  public void Frenar(int cuantaVelocidad){
+    System.out.println("Moto() -> Frenar()");
+  }
+  
+}
